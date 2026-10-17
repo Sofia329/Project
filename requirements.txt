@@ -1,0 +1,25 @@
+# Project dependencies
+
+# Core data science
+pandas>=1.2
+numpy>=1.19
+matplotlib>=3.3
+seaborn>=0.11
+scikit-learn>=1.0
+statsmodels>=0.12
+
+# Jupyter
+jupyterlab>=3.0
+notebook>=6.0
+
+# Optional / Deep learning
+tensorflow>=2.4   # or `tensorflow-cpu` if GPU not required
+keras>=2.4
+
+# Utilities
+ipython>=7.16
+
+# (Optional) add if you plan to use xgboost or other boosting libs
+xgboost>=1.3
+
+# Version pinning is kept broad here; pin exact versions if you need strict reproducibility.
