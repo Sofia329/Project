@@ -1,4 +1,6 @@
-# Data Science Portfolio — Airbnb, Time‑Series Forecasting & AdaBoost (-- Projects for USYD Master of Quant Finance & Big Data --)
+# Data Science Portfolio — Airbnb, Time‑Series Forecasting & AdaBoost 
+
+> Disclaimer these Projects are for USYD Master of Quant Finance & Big Data coursework
 
 This repository contains three data‑science projects demonstrating end‑to‑end workflows in exploratory analysis, feature engineering, modeling, and evaluation. The projects are suitable for a GitHub portfolio and showcase both applied machine learning and time‑series forecasting skills, plus a from‑scratch ensemble algorithm implementation.
 
