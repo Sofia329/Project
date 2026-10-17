@@ -1,50 +1,97 @@
-# Project 1: Airbnb-Project 
+# Data Science Portfolio — Airbnb, Time‑Series Forecasting & AdaBoost
 
+This repository contains three data‑science projects demonstrating end‑to‑end workflows in exploratory analysis, feature engineering, modeling, and evaluation. The projects are suitable for a GitHub portfolio and showcase both applied machine learning and time‑series forecasting skills, plus a from‑scratch ensemble algorithm implementation.
 
+---
 
+## Projects Overview
 
-#### Overview:
+1. **Airbnb Price Prediction (Airbnb Project.ipynb)**
+   - Goal: Predict nightly listing price using Airbnb listing features from Sydney.
+   - Highlights: extensive EDA, text and categorical feature engineering, model comparison (linear models, tree ensembles, boosting), and final predictive model with validation strategy.
+   - Useful for: hosts, investors, and pricing strategy analysis.
 
-In this project, the purpose is to analyses data from Airbnb rental in Sydney to provide market advice to hosts, real estate investors, and other stakeholders.To develop a predictive model for the daily prices of Airbnb rentals based on state-of-the-art techniques from statistical learning.  This model will and allow the company to advise hosts on pricing and to help owners and investors to predict the potential revenue of Airbnb rental 
+2. **Time Series Forecasting — Unemployment Rate (Time Series Data Prediction.ipynb)**
+   - Goal: Forecast monthly unemployment rates using historical series.
+   - Highlights: time‑series decomposition, trend/seasonality analysis, SARIMA and neural approaches, and model comparison (MSE/RMSE metrics).
+   - Useful for: macroeconomic analysis, policy planning, and forecasting practice.
 
-#### Supervised Learning Requirement:
+3. **AdaBoost Classifier (AdaBoost.py)**n   - Goal: Educational implementation of AdaBoost using decision stumps as weak learners.
+   - Highlights: demonstrates boosting loop, adaptive sample weighting, alpha calculation, and ensemble voting. Includes an option to use logistic regression as a base learner.
+   - Useful for: learning ensemble internals and custom estimator development.
 
-* Provide the validation (i.e. Public Leaderboard) scores for at least five different  sets  of  predictions,  including  your  final  model
-* At least one of your models should be an advanced nonparametric model (bagging, random forests, boosting, or a model that contains one of these three as a part).
-* Create text-based features as part of feature engineering.  
+---
 
-#### Code Outline:
+## Repository Structure
 
-1.Introduction: write a few paragraphs stating the business problem, summarising your final solution, and highlighting your key insights.
+- `Airbnb Project.ipynb` — notebook with the Airbnb analysis and predictive modeling pipeline.
+- `Time Series Data Prediction.ipynb` — notebook with time‑series exploration and forecasting experiments.
+- `AdaBoost.py` — custom AdaBoost classifier implementation (script / module).
+- `requirements.txt` — Python dependencies for running the notebooks and scripts.
+- `README.md` — this file.
 
- 
-2.Data processing and exploratory data analysis: provide key information about the data, discuss potential issues, and highlight interesting facts that are useful for the rest of your analysis. Due to lack your space, you may want to refer to the appendix for most EDA plots.  
+> Note: raw data files are not included in the repository. Add a `data/` folder and the original dataset CSVs when reproducing the analyses.
 
+---
 
-3.Feature engineering.  
+## Quickstart — Run locally
 
+1. Clone the repository:
 
-4.Methodology: here you will focus on the two models as outlined above (your rationale for choosing the models and why they make sense for the data, description of how these models are fitted, interpretations of the models in the context of the business problem at hand).  This part is allowed to be more technical than the rest of the report.
+```bash
+git clone https://github.com/Sofia329/Project.git
+cd Project
+```
 
+2. (Optional) Create and activate a virtual environment:
 
-5.Predictive model validation.  
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate    # Windows (PowerShell)
+```
 
+3. Install dependencies:
 
-#### Dataset:
+```bash
+pip install -r requirements.txt
+```
 
-[I'm the Dataset link](https://drive.google.com/drive/folders/1BNznLRF-k_K9NwG7UwZfunQBeJ4eQO4Q?usp=sharing)
+4. Run the notebooks:
 
+```bash
+jupyter lab   # or `jupyter notebook`
+# then open the two notebooks:
+# - "Airbnb Project.ipynb"
+# - "Time Series Data Prediction.ipynb"
+```
 
-# Project 2 - Times Series Prediction (Unemployment Rate)
+5. Run the AdaBoost script (example; you will need to provide a dataset or unit tests):
 
-#### Overview:
+```bash
+python AdaBoost.py
+```
 
-The umployment rate can be used as an important indicator by the central bank of the county to determine the health of the economy when setting mometary policy. For this project, the historical and current unemployment rates in a country from January 1986 to December 2018 has been obtained.The aim is to use this dataset to predict each month unemployment rate for 2019.
+---
 
-#### Procedures 
+## Reproducibility & Tips
 
-1. Data Pre-processing: Conduct initial Analysis over the entire data. Use python to clean up data 
-2. Exploring Time Series: Plot Times Series data and view patterns 
-3. Fitting a model: fitting an appropriate model to the data for predictions. Models Used: Moving Average, Decomposition Method, SARIMA, Deep Neural Network etc.
-4. Exam Result: Compare MSE for each model, adapted DNN for 2019 unemployment rate prediction
+- Add a `data/` directory and place original CSV files there (or update notebook paths). Notebooks currently expect CSVs in the working directory.
+- If a notebook uses GPU‑accelerated models (Keras/TensorFlow), ensure the correct TensorFlow package is installed and configured.
+- To reproduce exact results, pin dependency versions in `requirements.txt` (provided in this repo) and run in a clean virtual environment.
 
+---
+
+## Results & Next Steps
+
+- Add a `results/` folder with figures, model artifacts and a short `report.md` summarizing key findings (MAE/RMSE, feature importance, pros/cons of models).
+- Move large datasets outside the repo (or add them to a release), and keep notebooks focused on code + reproducible analysis.
+- Consider converting long notebooks into modular scripts under a `src/` folder for production‑ready workflows.
+
+---
+
+## License & Contact
+
+This repository is provided for educational and portfolio purposes. If you plan to reuse data or code outside personal study, check the original dataset licenses and attribute sources accordingly.
+
+If you have questions or want help improving structure, tests, or CI, open an issue or contact: **Sofia329** on GitHub.
