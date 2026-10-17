@@ -1,4 +1,4 @@
-# Data Science Portfolio — Airbnb, Time‑Series Forecasting & AdaBoost
+# Data Science Portfolio — Airbnb, Time‑Series Forecasting & AdaBoost (-- Projects for USYD Master of Quant Finance & Big Data --)
 
 This repository contains three data‑science projects demonstrating end‑to‑end workflows in exploratory analysis, feature engineering, modeling, and evaluation. The projects are suitable for a GitHub portfolio and showcase both applied machine learning and time‑series forecasting skills, plus a from‑scratch ensemble algorithm implementation.
 
@@ -16,7 +16,7 @@ This repository contains three data‑science projects demonstrating end‑to‑
    - Highlights: time‑series decomposition, trend/seasonality analysis, SARIMA and neural approaches, and model comparison (MSE/RMSE metrics).
    - Useful for: macroeconomic analysis, policy planning, and forecasting practice.
 
-3. **AdaBoost Classifier (AdaBoost.py)**n   - Goal: Educational implementation of AdaBoost using decision stumps as weak learners.
+3. **AdaBoost Classifier (AdaBoost.py)** - Goal: Educational implementation of AdaBoost using decision stumps as weak learners.
    - Highlights: demonstrates boosting loop, adaptive sample weighting, alpha calculation, and ensemble voting. Includes an option to use logistic regression as a base learner.
    - Useful for: learning ensemble internals and custom estimator development.
 
